@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html ng-app="mewApp" class="ng-scope" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>MyEtherWallet.com</title>
+<meta property="og:title" content="MyEtherWallet.com: Your Key to Ethereum">
+<meta property="og:site_name" content="MyEtherWallet.com: Your Key to Ethereum">
+<meta name="twitter:title" content="MyEtherWallet.com: Your Key to Ethereum">
+<meta name="apple-mobile-web-app-title" content="MyEtherWallet.com: Your Key to Ethereum">
+<link href="https://www.myetherwallet.com/" rel="canonical">
+<meta content="https://www.myetherwallet.com" property="og:url">
+<meta content="https://www.myetherwallet.com" name="twitter:url">
+<link rel="stylesheet" href="mew_files/etherwallet-master.css">
+<script type="text/javascript" src="mew_files/etherwallet-static.js"></script>
+<script type="text/javascript" src="mew_files/etherwallet-master.js"></script>
+<meta name="description" content="MyEtherWallet (MEW) is a free, open-source, client-side interface for generating Ethereum wallets &amp; more. Interact with the Ethereum blockchain easily &amp; securely.">
+<meta property="og:description" content="Free, open-source, client-side Ethereum wallet. Enabling you to interact with the blockchain easily &amp; securely.">
+<meta name="twitter:description" content="Free, open-source, client-side Ethereum wallet. Enabling you to interact with the blockchain easily &amp; securely.">
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
+<meta name="google-site-verification" content="IpChQ00NYUQuNs_7Xs6xlnSdzalOlTUYbBsr8f7OpvM">
+<link href="https://www.myetherwallet.com/images/fav/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+<link href="https://www.myetherwallet.com/images/fav/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+<link href="https://www.myetherwallet.com/images/fav/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+<link href="https://www.myetherwallet.com/images/fav/manifest.json" rel="manifest">
+<link href="https://www.myetherwallet.com/images/fav/safari-pinned-tab.svg" rel="mask-icon" color="#2f99b0">
+<link href="https://www.myetherwallet.com/images/fav/favicon.ico" rel="shortcut icon">
+<meta name="apple-mobile-web-app-title" content="MyEtherWallet · Your Key to Ethereum">
+<meta name="application-name" content="MyEtherWallet">
+<meta name="msapplication-config" content="images/fav/browserconfig.xml">
+<meta name="theme-color" content="#1d6986">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1d6986">
+<meta property="og:url" content="https://www.myetherwallet.com">
+<meta property="og:title" content="MyEtherWallet.com  · Your Key to Ethereum">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/images/myetherwallet-logo-banner.png">
+<meta property="og:image" content="/images/myetherwallet-logo.png">
+<meta property="og:image" content="/images/myetherwallet-logo-square.png">
+<meta property="og:image" content="/images/myetherwallet-banner-fun.jpg">
+<meta name="twitter:image" content="/images/myetherwallet-logo-twitter.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@MyEtherWallet">
+<meta name="twitter:creator" content="@MyEtherWallet">
+<script type="application/ld+json">
+{
+"@context": "http://schema.org",
+"@type" : "Organization",
+"name" : "MyEtherWallet",
+"legalName" : "MyEtherWallet LLC",
+"url" : "https://www.myetherwallet.com/",
+"contactPoint" : [{
+  "@type" : "ContactPoint",
+  "email" : "support@myetherwallet.com",
+  "url"   : "https://myetherwallet.com",
+  "contactType" : "customer service"
+}],
+"logo" : "{{base_url}}images/myetherwallet-logo.png",
+"description": "MyEtherWallet.com is a free, open-source, client-side interface for generating Ethereum wallets &amp; more. Interact with the Ethereum blockchain easily &amp; securely.",
+"sameAs" : [
+  "https://www.myetherwallet.com/",
+  "https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm",
+  "https://www.facebook.com/MyEtherWallet/",
+  "https://twitter.com/myetherwallet",
+  "https://medium.com/@myetherwallet",
+  "https://myetherwallet.github.io/knowledge-base/",
+  "https://github.com/kvhnuke/etherwallet",
+  "https://github.com/MyEtherWallet",
+  "https://kvhnuke.github.io/etherwallet/","https://myetherwallet.slack.com/"
+]
+}
+</script>
+</head>
+<body>
+
+<header class="ETH MyEtherWallet MyEtherWallet nav-index-5" aria-label="header" ng-controller="tabsCtrl">
+
+
+  <div class="small announcement annoucement-danger">
+    <div class="container">
+      WARNING: IF YOU CLICK A LINK to MEW from EMAIL, SLACK DM, or a FORUM, YOU WILL HAVE YOUR COINS STOLEN. Do not click. <br>
+      Instead, install
+      <a href="https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn" target="_blank" rel="noopener noreferrer">EAL</a>
+      or use
+      <a href="https://myetherwallet.github.io/knowledge-base/migration/moving-from-private-key-to-metamask.html" target="_blank" rel="noopener noreferrer">MetaMask</a>.</div>
+  </div>
+
+
+  
+<section class="bg-gradient header-branding">
+  <section class="container">
+    
+      <a class="brand" href="https://www.myetherwallet.com/" aria-label="Go to homepage">
+        <img src="mew_files/logo-myetherwallet.svg" alt="MyEtherWallet" width="245px" height="64px">
+      </a>
+    
+    
+    <div class="tagline">
+
+    <span>3.10.7.0</span>
+
+    <span class="dropdown dropdown-lang">
+      <a tabindex="0" aria-haspopup="true" aria-expanded="false" aria-label="change language. current language English" class="dropdown-toggle  btn btn-white ng-binding" ng-click="dropdown = !dropdown">English<i class="caret"></i></a>
+      <ul class="dropdown-menu ng-hide" ng-show="dropdown">
+        <li><a ng-class="{true:'active'}[curLang=='Català']" ng-click="changeLanguage('ca','Català'         )"> Català          </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='Deutsch']" ng-click="changeLanguage('de','Deutsch'        )"> Deutsch         </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='Ελληνικά']" ng-click="changeLanguage('el','Ελληνικά'       )"> Ελληνικά        </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='English']" ng-click="changeLanguage('en','English'        )" class="active"> English         </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='Español']" ng-click="changeLanguage('es','Español'        )"> Español         </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='Farsi']" ng-click="changeLanguage('fa','Farsi'          )"> Farsi           </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='Suomi']" ng-click="changeLanguage('fi','Suomi'          )"> Suomi           </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='Français']" ng-click="changeLanguage('fr','Français'       )"> Français        </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='Magyar']" ng-click="changeLanguage('hu','Magyar'         )"> Magyar          </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='Haitian Creole']" ng-click="changeLanguage('ht','Haitian Creole' )"> Haitian Creole  </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='Indonesian']" ng-click="changeLanguage('id','Indonesian'     )"> Bahasa Indonesia</a></li>
+        <li><a ng-class="{true:'active'}[curLang=='Italiano']" ng-click="changeLanguage('it','Italiano'       )"> Italiano        </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='日本語']" ng-click="changeLanguage('ja','日本語'          )"> 日本語          </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='한국어']" ng-click="changeLanguage('ko','한국어'          )"> 한국어           </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='Nederlands']" ng-click="changeLanguage('nl','Nederlands'     )"> Nederlands      </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='Norsk Bokmål']" ng-click="changeLanguage('no','Norsk Bokmål'   )"> Norsk Bokmål    </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='Polski']" ng-click="changeLanguage('pl','Polski'         )"> Polski          </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='Português']" ng-click="changeLanguage('pt','Português'      )"> Português       </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='Русский']" ng-click="changeLanguage('ru','Русский'        )"> Русский         </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='ภาษาไทย']" ng-click="changeLanguage('th','ภาษาไทย'        )"> ภาษาไทย         </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='Türkçe']" ng-click="changeLanguage('tr','Türkçe'         )"> Türkçe          </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='Tiếng Việt']" ng-click="changeLanguage('vi','Tiếng Việt'     )"> Tiếng Việt      </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='简体中文']" ng-click="changeLanguage('zhcn','简体中文'      )"> 简体中文         </a></li>
+        <li><a ng-class="{true:'active'}[curLang=='繁體中文']" ng-click="changeLanguage('zhtw','繁體中文'      )"> 繁體中文         </a></li>
+        <li role="separator" class="divider"></li>
+        <li><a data-toggle="modal" data-target="#disclaimerModal" translate="FOOTER_4" class="ng-scope">Disclaimer</a></li>
+      </ul>
+    </span>
+
+    <span class="dropdown dropdown-gas">
+      <a tabindex="0" aria-haspopup="true" aria-label="adjust gas price" class="dropdown-toggle  btn btn-white ng-binding" ng-click="dropdownGasPrice = !dropdownGasPrice">
+        <span translate="OFFLINE_Step2_Label_3" class="ng-scope">Gas Price</span>: 21 Gwei
+        <i class="caret"></i>
+      </a>
+      <ul class="dropdown-menu ng-hide" ng-show="dropdownGasPrice">
+        <div class="header--gas ng-binding">
+          <span translate="OFFLINE_Step2_Label_3" class="ng-scope">Gas Price</span>: 21 Gwei
+          <input ng-model="gas.value" min="0.1" max="60" step="0.1" ng-change="gasChanged()" class="ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-min ng-valid-max ng-valid-step" value="21" type="range">
+          <p class="small col-xs-4 text-left">Not So Fast</p>
+          <p class="small col-xs-4 text-center">Fast</p>
+          <p class="small col-xs-4 text-right">Fast AF</p>
+          <p class="small ng-scope" style="white-space:normal;font-weight:300;margin: 2rem 0 0;" translate="GAS_PRICE_Desc">Gas Price is the amount you pay per unit of gas. <code>TX fee = gas price * gas limit</code>
+ &amp; is paid to miners for including your TX in a block. Higher the 
+gas price = faster transaction, but more expensive. Default is <code>21 GWEI</code>.</p>
+          <a class="small ng-scope" translate="x_ReadMore" href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html" target="_blank" rel="noopener noreferrer">Read More</a>
+        </div>
+      </ul>
+    </span>
+
+    <!-- Warning: The separators you see on the frontend are in styles/etherwallet-custom.less. If you add / change a node, you have to adjust these. Ping tayvano if you're not a CSS wizard -->
+    <span class="dropdown dropdown-node">
+      <a tabindex="0" aria-haspopup="true" aria-label="change node. current node ETH node by MyEtherWallet" class="dropdown-toggle  btn btn-white ng-binding" ng-click="dropdownNode = !dropdownNode">
+        Network: ETH <small class="ng-binding">(MyEtherWallet)</small>
+        <i class="caret"></i>
+      </a>
+      <ul class="dropdown-menu ng-hide" ng-show="dropdownNode">
+        <!-- ngRepeat: (key, value) in nodeList --><li ng-repeat="(key, value) in nodeList" class="ng-scope"><a ng-class="{true:'active'}[curNode == key]" ng-click="changeNode(key)" class="ng-binding">
+          ETH
+          <small class="ng-binding"> (MyEtherWallet) </small>
+          <img ng-show="value.service=='Custom'" src="mew_files/icon-remove.svg" class="node-remove ng-hide" title="Remove Custom Node" ng-click="removeNodeFromLocal(value.name)">
+        </a></li><!-- end ngRepeat: (key, value) in nodeList --><li ng-repeat="(key, value) in nodeList" class="ng-scope"><a ng-class="{true:'active'}[curNode == key]" ng-click="changeNode(key)" class="ng-binding">
+          ETH
+          <small class="ng-binding"> (Etherscan.io) </small>
+          <img ng-show="value.service=='Custom'" src="mew_files/icon-remove.svg" class="node-remove ng-hide" title="Remove Custom Node" ng-click="removeNodeFromLocal(value.name)">
+        </a></li><!-- end ngRepeat: (key, value) in nodeList --><li ng-repeat="(key, value) in nodeList" class="ng-scope"><a ng-class="{true:'active'}[curNode == key]" ng-click="changeNode(key)" class="ng-binding">
+          ETH
+          <small class="ng-binding"> (infura.io) </small>
+          <img ng-show="value.service=='Custom'" src="mew_files/icon-remove.svg" class="node-remove ng-hide" title="Remove Custom Node" ng-click="removeNodeFromLocal(value.name)">
+        </a></li><!-- end ngRepeat: (key, value) in nodeList --><li ng-repeat="(key, value) in nodeList" class="ng-scope"><a ng-class="{true:'active'}[curNode == key]" ng-click="changeNode(key)" class="ng-binding">
+          ETH
+          <small class="ng-binding"> (Giveth.io) </small>
+          <img ng-show="value.service=='Custom'" src="mew_files/icon-remove.svg" class="node-remove ng-hide" title="Remove Custom Node" ng-click="removeNodeFromLocal(value.name)">
+        </a></li><!-- end ngRepeat: (key, value) in nodeList --><li ng-repeat="(key, value) in nodeList" class="ng-scope"><a ng-class="{true:'active'}[curNode == key]" ng-click="changeNode(key)" class="ng-binding">
+          ETC
+          <small class="ng-binding"> (Epool.io) </small>
+          <img ng-show="value.service=='Custom'" src="mew_files/icon-remove.svg" class="node-remove ng-hide" title="Remove Custom Node" ng-click="removeNodeFromLocal(value.name)">
+        </a></li><!-- end ngRepeat: (key, value) in nodeList --><li ng-repeat="(key, value) in nodeList" class="ng-scope"><a ng-class="{true:'active'}[curNode == key]" ng-click="changeNode(key)" class="ng-binding">
+          Ropsten
+          <small class="ng-binding"> (MyEtherWallet) </small>
+          <img ng-show="value.service=='Custom'" src="mew_files/icon-remove.svg" class="node-remove ng-hide" title="Remove Custom Node" ng-click="removeNodeFromLocal(value.name)">
+        </a></li><!-- end ngRepeat: (key, value) in nodeList --><li ng-repeat="(key, value) in nodeList" class="ng-scope"><a ng-class="{true:'active'}[curNode == key]" ng-click="changeNode(key)" class="ng-binding">
+          Ropsten
+          <small class="ng-binding"> (infura.io) </small>
+          <img ng-show="value.service=='Custom'" src="mew_files/icon-remove.svg" class="node-remove ng-hide" title="Remove Custom Node" ng-click="removeNodeFromLocal(value.name)">
+        </a></li><!-- end ngRepeat: (key, value) in nodeList --><li ng-repeat="(key, value) in nodeList" class="ng-scope"><a ng-class="{true:'active'}[curNode == key]" ng-click="changeNode(key)" class="ng-binding">
+          Kovan
+          <small class="ng-binding"> (Etherscan.io) </small>
+          <img ng-show="value.service=='Custom'" src="mew_files/icon-remove.svg" class="node-remove ng-hide" title="Remove Custom Node" ng-click="removeNodeFromLocal(value.name)">
+        </a></li><!-- end ngRepeat: (key, value) in nodeList --><li ng-repeat="(key, value) in nodeList" class="ng-scope"><a ng-class="{true:'active'}[curNode == key]" ng-click="changeNode(key)" class="ng-binding">
+          Rinkeby
+          <small class="ng-binding"> (Etherscan.io) </small>
+          <img ng-show="value.service=='Custom'" src="mew_files/icon-remove.svg" class="node-remove ng-hide" title="Remove Custom Node" ng-click="removeNodeFromLocal(value.name)">
+        </a></li><!-- end ngRepeat: (key, value) in nodeList --><li ng-repeat="(key, value) in nodeList" class="ng-scope"><a ng-class="{true:'active'}[curNode == key]" ng-click="changeNode(key)" class="ng-binding">
+          Rinkeby
+          <small class="ng-binding"> (infura.io) </small>
+          <img ng-show="value.service=='Custom'" src="mew_files/icon-remove.svg" class="node-remove ng-hide" title="Remove Custom Node" ng-click="removeNodeFromLocal(value.name)">
+        </a></li><!-- end ngRepeat: (key, value) in nodeList --><li ng-repeat="(key, value) in nodeList" class="ng-scope"><a ng-class="{true:'active'}[curNode == key]" ng-click="changeNode(key)" class="ng-binding">
+          RSK
+          <small class="ng-binding"> (GK2.sk) </small>
+          <img ng-show="value.service=='Custom'" src="mew_files/icon-remove.svg" class="node-remove ng-hide" title="Remove Custom Node" ng-click="removeNodeFromLocal(value.name)">
+        </a></li><!-- end ngRepeat: (key, value) in nodeList --><li ng-repeat="(key, value) in nodeList" class="ng-scope"><a ng-class="{true:'active'}[curNode == key]" ng-click="changeNode(key)" class="ng-binding">
+          EXP
+          <small class="ng-binding"> (Expanse.tech) </small>
+          <img ng-show="value.service=='Custom'" src="mew_files/icon-remove.svg" class="node-remove ng-hide" title="Remove Custom Node" ng-click="removeNodeFromLocal(value.name)">
+        </a></li><!-- end ngRepeat: (key, value) in nodeList --><li ng-repeat="(key, value) in nodeList" class="ng-scope"><a ng-class="{true:'active'}[curNode == key]" ng-click="changeNode(key)" class="ng-binding">
+          UBQ
+          <small class="ng-binding"> (ubiqscan.io) </small>
+          <img ng-show="value.service=='Custom'" src="mew_files/icon-remove.svg" class="node-remove ng-hide" title="Remove Custom Node" ng-click="removeNodeFromLocal(value.name)">
+        </a></li><!-- end ngRepeat: (key, value) in nodeList -->
+        <li><a ng-click="customNodeModal.open(); dropdownNode = !dropdownNode;"> Add Custom Node </a></li>
+      </ul>
+    </span>
+
+    </div>
+  </section>
+</section>
+
+<nav role="navigation" aria-label="main navigation" class="container nav-container overflowing">
+  <a aria-hidden="true" ng-show="showLeftArrow" class="nav-arrow-left ng-hide" ng-click="scrollLeft(100);" ng-mouseover="scrollHoverIn(true,2);" ng-mouseleave="scrollHoverOut()">«</a>
+  <div class="nav-scroll">
+    <ul class="nav-inner">
+      
+      <!-- ngRepeat: tab in tabNames track by $index --><li ng-repeat="tab in tabNames track by $index" class="nav-item NAV_GenerateWallet_alt" ng-class="{active: $index==gService.currentTab}" ng-show="tab.mew" ng-click="tabClick($index)"> <a tabindex="0" aria-label="nav item: New Wallet 
+" translate="NAV_GenerateWallet_alt" class="ng-scope">New Wallet</a></li><!-- end ngRepeat: tab in tabNames track by $index --><li ng-repeat="tab in tabNames track by $index" class="nav-item NAV_MyWallets ng-hide" ng-class="{active: $index==gService.currentTab}" ng-show="tab.mew" ng-click="tabClick($index)"> <a tabindex="0" aria-label="nav item: My Wallets 
+" translate="NAV_MyWallets" class="ng-scope">My Wallets</a></li><!-- end ngRepeat: tab in tabNames track by $index --><li ng-repeat="tab in tabNames track by $index" class="nav-item NAV_AddWallet ng-hide" ng-class="{active: $index==gService.currentTab}" ng-show="tab.mew" ng-click="tabClick($index)"> <a tabindex="0" aria-label="nav item: Add Wallet 
+" translate="NAV_AddWallet" class="ng-scope">Add Wallet</a></li><!-- end ngRepeat: tab in tabNames track by $index --><li ng-repeat="tab in tabNames track by $index" class="nav-item NAV_SendEther" ng-class="{active: $index==gService.currentTab}" ng-show="tab.mew" ng-click="tabClick($index)"> <a tabindex="0" aria-label="nav item: Send Ether &amp;amp; Tokens 
+" translate="NAV_SendEther" class="ng-scope">Send Ether &amp; Tokens</a></li><!-- end ngRepeat: tab in tabNames track by $index --><li ng-repeat="tab in tabNames track by $index" class="nav-item NAV_Swap" ng-class="{active: $index==gService.currentTab}" ng-show="tab.mew" ng-click="tabClick($index)"> <a tabindex="0" aria-label="nav item: Swap 
+" translate="NAV_Swap" class="ng-scope">Swap</a></li><!-- end ngRepeat: tab in tabNames track by $index --><li ng-repeat="tab in tabNames track by $index" class="nav-item NAV_Offline active" ng-class="{active: $index==gService.currentTab}" ng-show="tab.mew" ng-click="tabClick($index)"> <a tabindex="0" aria-label="nav item: Send Offline 
+" translate="NAV_Offline" class="ng-scope">Send Offline</a></li><!-- end ngRepeat: tab in tabNames track by $index --><li ng-repeat="tab in tabNames track by $index" class="nav-item NAV_Contracts" ng-class="{active: $index==gService.currentTab}" ng-show="tab.mew" ng-click="tabClick($index)"> <a tabindex="0" aria-label="nav item: Contracts 
+" translate="NAV_Contracts" class="ng-scope">Contracts</a></li><!-- end ngRepeat: tab in tabNames track by $index --><li ng-repeat="tab in tabNames track by $index" class="nav-item NAV_ENS" ng-class="{active: $index==gService.currentTab}" ng-show="tab.mew" ng-click="tabClick($index)"> <a tabindex="0" aria-label="nav item: ENS
+" translate="NAV_ENS" class="ng-scope">ENS</a></li><!-- end ngRepeat: tab in tabNames track by $index --><li ng-repeat="tab in tabNames track by $index" class="nav-item NAV_DomainSale ng-hide" ng-class="{active: $index==gService.currentTab}" ng-show="tab.mew" ng-click="tabClick($index)"> <a tabindex="0" aria-label="nav item: DomainSale
+" translate="NAV_DomainSale" class="ng-scope">DomainSale</a></li><!-- end ngRepeat: tab in tabNames track by $index --><li ng-repeat="tab in tabNames track by $index" class="nav-item NAV_CheckTxStatus" ng-class="{active: $index==gService.currentTab}" ng-show="tab.mew" ng-click="tabClick($index)"> <a tabindex="0" aria-label="nav item: Check TX Status
+" translate="NAV_CheckTxStatus" class="ng-scope">Check TX Status</a></li><!-- end ngRepeat: tab in tabNames track by $index --><li ng-repeat="tab in tabNames track by $index" class="nav-item NAV_ViewWallet" ng-class="{active: $index==gService.currentTab}" ng-show="tab.mew" ng-click="tabClick($index)"> <a tabindex="0" aria-label="nav item: View Wallet Info 
+" translate="NAV_ViewWallet" class="ng-scope">View Wallet Info</a></li><!-- end ngRepeat: tab in tabNames track by $index --><li ng-repeat="tab in tabNames track by $index" class="nav-item NAV_SignMsg ng-hide" ng-class="{active: $index==gService.currentTab}" ng-show="tab.mew" ng-click="tabClick($index)"> <a tabindex="0" aria-label="nav item: Sign Message 
+" translate="NAV_SignMsg" class="ng-scope">Sign Message</a></li><!-- end ngRepeat: tab in tabNames track by $index --><li ng-repeat="tab in tabNames track by $index" class="nav-item NAV_BulkGenerate ng-hide" ng-class="{active: $index==gService.currentTab}" ng-show="tab.mew" ng-click="tabClick($index)"> <a tabindex="0" aria-label="nav item: Bulk Generate 
+" translate="NAV_BulkGenerate" class="ng-scope">Bulk Generate</a></li><!-- end ngRepeat: tab in tabNames track by $index -->
+      
+      
+      <li class="nav-item help"><a href="https://myetherwallet.github.io/knowledge-base/" target="_blank" rel="noopener noreferrer">Help</a></li>
+    </ul>
+  </div>
+  <a aria-hidden="true" ng-show="showRightArrow" class="nav-arrow-right" ng-click="scrollRight(100);" ng-mouseover="scrollHoverIn(false,2);" ng-mouseleave="scrollHoverOut()">»</a>
+</nav>
+
+ <article class="modal fade" id="customNodeModal" tabindex="-1">
+  <section class="modal-dialog">
+    <section class="modal-content">
+
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+
+        <h2 class="modal-title text-info ng-scope" translate="NODE_Title">Set Up Your Custom Node</h2>
+
+        <p class="small"><a href="https://myetherwallet.github.io/knowledge-base/networks/run-your-own-node-with-myetherwallet.html" target="_blank" rel="noopener noreferrer"> Instructions can be found here </a></p>
+
+        <div ng-show="browserProtocol=='https:'" class="alert alert-danger small ng-scope" translate="NODE_Warning">Your node must be HTTPS in order to connect to it via MyEtherWallet.com. You can <a target="_blank" rel="noopener noreferrer" href="https://github.com/kvhnuke/etherwallet/releases/latest">download the MyEtherWallet repo &amp; run it locally</a> to connect to any node. Or, get free SSL certificate via <a target="_blank" rel="noopener noreferrer" href="https://letsencrypt.org/">LetsEncrypt</a></div>
+
+        <section class="row">
+          <div class="clearfix col-xs-12">
+            <label translate="NODE_Name" class="ng-scope">Node Name</label>
+            <input class="form-control ng-pristine ng-untouched ng-valid ng-empty is-invalid" placeholder="My ETH Node" ng-model="customNode.name" ng-class="Validator.isAlphaNumericSpace(customNode.name) ? 'is-valid' : 'is-invalid'" type="text">
+          </div>
+
+          <div class="clearfix col-xs-9">
+            <label>URL</label>
+            <input class="form-control ng-pristine ng-untouched ng-valid ng-empty is-invalid" placeholder="http://127.0.0.1" ng-model="customNode.url" ng-class="checkNodeUrl(customNode.url) ? 'is-valid' : 'is-invalid'" type="text">
+          </div>
+
+          <div class="clearfix col-xs-3">
+            <label class="NODE_Port">Port</label>
+            <input class="form-control ng-pristine ng-untouched ng-valid ng-empty is-valid" placeholder="8545" ng-model="customNode.port" ng-class="Validator.isPositiveNumber(customNode.port) || customNode.port=='' ? 'is-valid' : 'is-invalid'" type="text">
+          </div>
+
+          <div class="clearfix col-xs-12">
+            <label><input ng-model="customNode.httpBasicAuth" ng-true-value="{user:'',password:''}" ng-false-value="null" value="false" class="ng-pristine ng-untouched ng-valid ng-empty" type="checkbox"> HTTP Basic access authentication </label>
+          </div>
+
+          <div class="clearfix col-xs-6 ng-hide" ng-show="customNode.httpBasicAuth">
+            <label>User</label>
+            <input class="form-control ng-pristine ng-untouched ng-valid ng-empty is-invalid" ng-model="customNode.httpBasicAuth.user" ng-class="customNode.httpBasicAuth &amp;&amp; customNode.httpBasicAuth.user.length &gt; 0 ? 'is-valid' : 'is-invalid'" type="text">
+          </div>
+
+          <div class="clearfix col-xs-6 ng-hide" ng-show="customNode.httpBasicAuth">
+            <label>Password</label>
+            <input class="form-control ng-pristine ng-untouched ng-valid ng-empty is-invalid" ng-model="customNode.httpBasicAuth.password" ng-class="customNode.httpBasicAuth &amp;&amp; customNode.httpBasicAuth.password.length &gt; 0 ? 'is-valid' : 'is-invalid'" type="password">
+          </div>
+
+          <div class="clearfix col-xs-12 radio">
+            <label><input name="options" ng-model="customNode.options" value="eth" class="ng-pristine ng-untouched ng-valid ng-not-empty" checked="checked" type="radio"> ETH </label>
+            <label><input name="options" ng-model="customNode.options" value="etc" class="ng-pristine ng-untouched ng-valid ng-not-empty" type="radio"> ETC </label>
+            <label><input name="options" ng-model="customNode.options" value="rop" class="ng-pristine ng-untouched ng-valid ng-not-empty" type="radio"> Ropsten </label>
+            <label><input name="options" ng-model="customNode.options" value="kov" class="ng-pristine ng-untouched ng-valid ng-not-empty" type="radio"> Kovan </label>
+            <label><input name="options" ng-model="customNode.options" value="rin" class="ng-pristine ng-untouched ng-valid ng-not-empty" type="radio"> Rinkeby </label>
+            <label><input name="options" ng-model="customNode.options" value="cus" class="ng-pristine ng-untouched ng-valid ng-not-empty" type="radio"> Custom </label>
+            <label><input ng-model="customNode.eip155" value="true" class="ng-pristine ng-untouched ng-valid ng-empty" type="checkbox"> Supports EIP-155 </label>
+          </div>
+
+          <div class="clearfix col-sm-6 col-sm-offset-6 ng-hide" ng-show="customNode.eip155">
+            <label>Chain ID</label>
+            <input class="form-control ng-pristine ng-untouched ng-valid ng-empty is-invalid" placeholder="" ng-model="customNode.chainId" ng-class="Validator.isPositiveNumber(customNode.chainId) ? 'is-valid' : 'is-invalid'" type="text">
+          </div>
+        </section>
+
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-default ng-scope" data-dismiss="modal" translate="x_Cancel">Cancel</button>
+        <button class="btn btn-primary ng-scope" ng-click="saveCustomNode()" translate="NODE_CTA">Save &amp; Use Custom Node</button>
+      </div>
+
+
+    </section>
+  </section>
+</article>
+ 
+
+
+</header>
+
+
+<section class="container ng-scope" style="min-height: 50%" ng-controller="viewCtrl">
+
+  <div class="tab-content">
+
+    <!-- ngIf: globalService.currentTab==globalService.tabs.generateWallet.id -->
+
+
+    <!-- ngIf: globalService.currentTab==globalService.tabs.sendTransaction.id -->
+
+
+    <!-- Swap Page -->
+<!-- ngIf: globalService.currentTab==globalService.tabs.swap.id -->
+<!-- / Swap Page -->
+
+
+
+
+
+
+    <!-- ngIf: globalService.currentTab==globalService.tabs.offlineTransaction.id --><main class="tab-pane active ng-scope" ng-if="globalService.currentTab==globalService.tabs.offlineTransaction.id" ng-controller="offlineTxCtrl">
+
+  <h1 translate="OFFLINE_Title" class="ng-scope">Generate &amp; Send Offline Transaction</h1>
+
+   <!-- Step 1 -->
+<article class="row block">
+
+  <h2 class="col-xs-11 clearfix ng-scope" translate="OFFLLINE_Step1_Title">Step 1: Generate Information (Online Computer)</h2>
+
+  <!-- From Address Input -->
+  <section class="col-xs-11 clearfix">
+    <div class="account-help-icon"><img src="mew_files/icon-help.svg" class="help-icon">
+      <p class="account-help-text ng-scope" translate="OFFLINE_Step1_Label_2">Note:
+ This is the FROM address, not the TO address. Nonce is generated from 
+the originating account. If using an airgapped computer, it would be the
+ address of the cold-storage account.</p>
+      <label translate="OFFLINE_Step1_Label_1" class="ng-scope">From Address</label>
+    </div>
+    <input class="form-control ng-valid ng-not-empty ng-dirty ng-valid-parse is-valid ng-touched" placeholder="0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8" ng-model="tx.from" ng-change="validateAddress(tx.from,'')" ng-class="Validator.isValidAddress(tx.from) ? 'is-valid' : 'is-invalid'" value="0xb794f5ea0ba39494ce839613fffba74279579268" type="text">
+  </section>
+  <!-- From Address Icon -->
+  <section class="col-xs-1 address-identicon-container">
+    <div class="addressIdenticon" title="Address Indenticon" blockie-address="0xb794f5ea0ba39494ce839613fffba74279579268" watch-var="tx.from" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABzklEQVR4nO3asVEEQQwAwQvkoyE26pPAIwASwScdPgGwVJR+mTZka1bV59318vn+vTmvb7fR6J/NtR1w+gFP7wcg3g9AvB+AeD8A8X4A4v0AxPsBiPcDEO8HIN4PQLwfgHg/APF+AOL9AMT7AYj3AxDvByDeD0C8H4B4PwDxfgDi/QDE+wGI9wMQ7wcg3g9AvB+AeD8A8X4A4v0AxPuv7Qd8fdxHM+2fzrR/GyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPOMBTp/tDwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID/CWD7AdP90wNM5/T7AQDA2Q8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/grA9IDTA2wD2O4HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgJ8AbAds7z+9f7ofgMP7AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+AbB9wOkPFfpnA0C8H4B4PwDxfgDi/QDE+wGI9wMQ7wcg3g9AvB+AeD8A8X4A4v0AxPsBiPcDEO9/AHR7B7uoP+9cAAAAAElFTkSuQmCC&quot;);"></div>
+  </section>
+
+
+  <!-- Button -->
+  <section class="col-xs-12 clearfix">
+    <a class="btn btn-info ng-scope" ng-click="getWalletInfo()" translate="OFFLINE_Step1_Button">Generate Information</a>
+  </section>
+
+
+  <section class="clearfix" ng-show="showWalletInfo">
+
+    <!-- Gas Price -->
+    <div class="col-xs-6 col-sm-5">
+      <label translate="OFFLINE_Step2_Label_3" class="ng-scope">Gas Price</label>
+      <input class="form-control ng-pristine ng-untouched ng-valid ng-not-empty" placeholder="" readonly="readonly" ng-model="gasPriceDec" value="21000000000" type="text">
+    </div>
+
+    <!-- Nonce -->
+    <div class="col-xs-6 col-sm-5">
+      <label translate="OFFLINE_Step2_Label_5" class="ng-scope">Nonce</label>
+      <input class="form-control ng-pristine ng-untouched ng-valid ng-not-empty" placeholder="" readonly="readonly" ng-model="nonceDec" value="175" type="text">
+    </div>
+
+  </section>
+
+</article>
+<!-- / Step 1 -->
+ 
+  
+
+   <article class="block">
+
+  <!-- To Address -->
+  <article class="clearfix">
+    <h2 class="col-xs-12 ng-scope" translate="OFFLINE_Step2_Title">Step 2: Generate Transaction (Offline Computer)</h2>
+
+    <section class="col-xs-11">
+      <label translate="OFFLINE_Step2_Label_1" class="ng-scope">To Address</label>
+      <input class="form-control ng-pristine ng-untouched ng-valid ng-empty" placeholder="0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8" ng-model="tx.to" ng-change="validateAddress(tx.to,'')" type="text">
+    </section>
+
+    <section class="col-xs-1 address-identicon-container">
+      <div class="addressIdenticon" title="Address Indenticon" blockie-address="" watch-var="tx.to" style="background-image: url(&quot;&quot;);"></div>
+    </section>
+
+
+    <section class="col-xs-12">
+      <p class="ng-binding"></p>
+    </section>
+  </article>
+
+  <!-- Amount to Send -->
+  <article class="clearfix">
+    <section class="col-sm-11">
+      <label translate="OFFLINE_Step2_Label_2" class="ng-scope">Value / Amount to Send</label>
+      <div class="input-group">
+        <input class="form-control ng-pristine ng-untouched ng-valid ng-empty" placeholder="Amount 
+" ng-model="tx.value" type="text">
+        <div class="input-group-btn">
+          <a style="min-width: 150px" class="btn btn-default dropdown-toggle ng-binding" ng-click="dropdownAmount = !dropdownAmount" ng-class="dropdownEnabled ? '' : 'disabled'">
+                ETH<i class="caret"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right ng-hide" ng-show="dropdownAmount">
+            <li><a ng-class="{true:'active'}[tokenTx.id == 'ether']" ng-click="setSendMode('ether')" class="ng-binding active">ETH</a></li>
+            <!-- ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> 1ST </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> 300 </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ACC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ADST </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ADT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ADX </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> AIR </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ALIS </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ALTS </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> AMIS </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ANT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> APT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ARC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ARN </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ART </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> AST </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ATH </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ATL </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> AVA 🐴 </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> AVT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> BAT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> BCDN </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> BCPT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> BCV </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> BeerCoin 🍺  </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> BET </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> BKB </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> BLX? Bullion Crypto </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> BLX? Iconomi </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> BMC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> BMT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> BNC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> BNT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> BOP </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> BOU </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> BRAT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> BQX </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> BTE </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> C20 </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> CAG </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> CAN </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> CAT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> CCC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> CDT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> CFI </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> CLP </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> CMC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> CMT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> COB </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> COSS </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> CRB </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> CREDO </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> CryptoCarbon </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> CTL </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> CVC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> DAB </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> DALC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> DAO </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> DATA (Streamr) </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> DATA (DataBrokerDAO) </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> DDF </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> DENT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> DGD </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> DGX 1.0 </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> DICE </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> DLT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> DNT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> DROP </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> DPP </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> DRP </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ECN </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> EDO </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> EHT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> EDG </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ELIX </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> EMV </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ENJ </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> EOS </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ETBS </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ETHB </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> EVX </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> FAM </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> FLIXX </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> FRD </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> FTC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> FUEL </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> FUN </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> FYN </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> GBT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> GELD </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> GIM </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> GMT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> GNO </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> GNT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> GRID </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> GTC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> GTKT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> GUP </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> GVT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> H2O </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> HDG </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> HGT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> HKG </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> HMQ </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> HST </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ICE </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ICN </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ICOS </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> IDEA </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> IFT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> IKB </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> IMT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> IND </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> INXT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ITT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> IXT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> JET (new) </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> JET (old) </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> JetCoins </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> KICK </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> KIN </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> KNC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> KZN </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> LIFE </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> LINK </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> LIVE </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> LOK </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> LNC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> LRC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> LUCK </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> LUN </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> LOC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MANA </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MBRS </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MCAP </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MCI </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MCO </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MDA </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MGO </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MIT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MKR </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MLN </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MNE </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MOD </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MRV </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MSP </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MTH </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MTL </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MTR </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MTX </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MYD </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> MYST </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> NET </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> NMR </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> NxC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> NXX </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> NIMFA </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> OAX </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> OHNI </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> OMG </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ONEK </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> OPT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> PAY </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> PIX </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> PLAY </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> PLBT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> PLR </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> PLU </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> POE </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> POOL </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> POS </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> PPP </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> PPT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> PRO </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> PRS </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> PRSP </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> PT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> PTOY </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> QAU </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> QTQ </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> QTUM </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> QRL </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> REP </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> REX </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> RLC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> RLT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> RLX </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> RNDR </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> RPL </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ROUND </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> RVT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> REQ </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SALT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SAN </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SCL </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> sense </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SGEL </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SGT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SHIT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SIFT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SKIN </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SKO1 </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SKR </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SLT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> Smart </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SNC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SNGLS </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SND </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SNM </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SNT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SPARC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SPARTA </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> STORJ </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> STN </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> STRC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> STX </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SUB </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SWT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> SYN </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> TaaS </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> TBT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> TFL </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> TBC2 </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> TIME </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> TIX </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> TKN </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> TNT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> TRST </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> TRX </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> TRX </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> TRX </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> Unicorn 🦄 </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> VERI </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> VEN </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> VIBE </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> VIBEX </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> VIB </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> VOISE </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> VRS </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> VSL </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> VSM(OLD) </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> WBC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> WCT </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> WiC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> WINGS </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> WLK </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> WOLK </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> WRC </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> XAUR </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> XID </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> XRL </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> YUPIE </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ZAP </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ZRX </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> ZST </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> LUM </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index --><li ng-repeat="token in tokenObjs track by $index" class="ng-scope">
+              <a ng-class="{true:'active'}[tokenTx.id == $index]" ng-click="setSendMode($index, token.getSymbol())" class="ng-binding"> PIPL </a>
+            </li><!-- end ngRepeat: token in tokenObjs track by $index -->
+          </ul>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <!-- Gas Limit -->
+  <article class="clearfix">
+    <section class="col-sm-11">
+      <a class="account-help-icon" href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html" target="_blank" rel="noopener noreferrer">
+        <img src="mew_files/icon-help.svg" class="help-icon">
+        <p class="account-help-text ng-scope" translate="OFFLINE_Step2_Label_4b">21000
+ is the default gas limit. When you send contracts or add'l data, this 
+may need to be different. Any unused gas will be returned to you.</p>
+      </a>
+      <label translate="OFFLINE_Step2_Label_4" class="ng-scope">Gas Limit</label>
+      <input class="form-control ng-pristine ng-untouched ng-valid ng-not-empty" placeholder="" ng-model="tx.gasLimit" value="21000" type="text">
+    </section>
+  </article>
+
+  <!-- Gas Price -->
+  <article class="clearfix">
+    <section class="col-sm-11">
+      <a class="account-help-icon" href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html" target="_blank" rel="noopener noreferrer">
+        <img src="mew_files/icon-help.svg" class="help-icon">
+        <p class="account-help-text ng-scope" translate="OFFLINE_Step2_Label_3b">This was displayed in Step 1 on your online computer.</p>
+      </a>
+      <label translate="OFFLINE_Step2_Label_3" class="ng-scope">Gas Price</label>
+      <div class="input-group">
+        <input class="form-control ng-pristine ng-untouched ng-valid ng-not-empty is-valid" placeholder="50" ng-model="gasPriceDec" ng-disabled="checkTxReadOnly" ng-class="Validator.isPositiveNumber(gasPriceDec) ? 'is-valid' : 'is-invalid'" value="21000000000" type="text">
+        <div class="input-group-btn">
+          <button style="min-width: 170px" class="btn btn-default">  WEI </button>
+        </div>
+      </div>
+    </section>
+  </article>
+
+
+  <!-- Nonce -->
+  <article class="clearfix">
+    <section class="col-sm-11">
+      <a class="account-help-icon" href="https://myetherwallet.github.io/knowledge-base/transactions/what-is-nonce.html" target="_blank" rel="noopener noreferrer">
+        <img src="mew_files/icon-help.svg" class="help-icon">
+        <p class="account-help-text ng-scope" translate="OFFLINE_Step2_Label_5b">This was displayed in Step 1 on your online computer.</p>
+      </a>
+      <label translate="OFFLINE_Step2_Label_5" class="ng-scope">Nonce</label>
+      <input class="form-control ng-pristine ng-untouched ng-valid ng-not-empty" placeholder="" ng-model="nonceDec" value="175" type="text">
+    </section>
+  </article>
+
+
+  <!-- Data -->
+  <article class="clearfix">
+    <section class="col-sm-11" ng-show="tokenTx.id=='ether'">
+      <span class="account-help-icon">
+        <img src="mew_files/icon-help.svg" class="help-icon">
+        <p class="account-help-text ng-scope" translate="OFFLINE_Step2_Label_6b">This is optional. Data is often used when you send transactions to contracts.</p>
+      </span>
+      <label translate="OFFLINE_Step2_Label_6" class="ng-scope">Data</label>
+      <input class="form-control ng-pristine ng-untouched ng-valid ng-empty" placeholder="0x4d792045746865722057616c6c6574" id="offlineData" ng-model="tx.data" type="text">
+    </section>
+  </article>
+
+</article>
+
+
+<!-- Decrypt -->
+<article class="clearfix">
+  <wallet-decrypt-drtv><article class="block decrypt-drtv clearfix ng-scope" ng-controller="decryptWalletCtrl as $crtl">
+
+  <!-- Column 1 - Select Type of Key -->
+  <section class="col-md-4 col-sm-6">
+
+    <h4 translate="decrypt_Access" style="margin-top:0;" class="ng-scope">How would you like to access your wallet?</h4>
+
+    <!-- MetaMask -->
+    <label class="radio">
+      <input aria-flowto="aria3" aria-label="MetaMask / Mist" ng-model="walletType" value="metamask" class="ng-pristine ng-untouched ng-valid ng-not-empty" name="191" type="radio">
+      <span translate="x_MetaMask" class="ng-scope">Metamask / Mist</span>
+      <a href="https://myetherwallet.github.io/knowledge-base/migration/moving-from-private-key-to-metamask.html" target="_blank" rel="noopener noreferrer">
+            <img src="mew_files/icon-help-3.svg" style="margin: 0 5px 5px" width="16px" height="16px">
+      </a>
+    </label>
+
+    <!-- Ledger -->
+    <label class="radio" ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'">
+      <input aria-flowto="aria2" aria-label="Ledger Wallet hardware wallet" ng-model="walletType" value="ledger" class="ng-pristine ng-untouched ng-valid ng-not-empty" name="193" type="radio">
+      Ledger Wallet
+      <a href="https://ledger.zendesk.com/hc/en-us/articles/115005200009-How-to-use-MyEtherWallet-with-Ledger" target="_blank" rel="noopener noreferrer">
+        <img src="mew_files/icon-help-3.svg" style="margin: 0 5px 5px" width="16px" height="16px">
+      </a>
+    </label>
+
+    <!-- TREZOR -->
+    <label class="radio" ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'||ajaxReq.type=='UBQ'">
+      <input aria-flowto="aria6" aria-label="Trezor hardware wallet" ng-model="walletType" value="trezor" class="ng-pristine ng-untouched ng-valid ng-not-empty" name="194" type="radio">
+      TREZOR
+      <a href="https://doc.satoshilabs.com/trezor-apps/mew.html" target="_blank" rel="noopener noreferrer">
+        <img src="mew_files/icon-help-3.svg" style="margin: 0 5px 5px" width="16px" height="16px">
+      </a>
+    </label>
+
+    <!-- Digital Bitbox -->
+    <label class="radio" ng-show="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'">
+      <input aria-flowto="aria7" aria-label="Digital Bitbox hardware wallet" ng-model="walletType" value="digitalBitbox" class="ng-pristine ng-untouched ng-valid ng-not-empty" name="195" type="radio">
+      Digital Bitbox
+      <a href="https://digitalbitbox.com/ethereum" target="_blank" rel="noopener noreferrer">
+        <img src="mew_files/icon-help-3.svg" style="margin: 0 5px 5px" width="16px" height="16px">
+      </a>
+    </label>
+
+
+    <!-- Keystore / JSON File -->
+    <label class="radio">
+      <input aria-flowto="aria1" aria-label="Keystore JSON file" ng-model="walletType" value="fileupload" class="ng-pristine ng-untouched ng-valid ng-not-empty" name="196" type="radio">
+      Keystore / JSON File
+      <a href="https://myetherwallet.github.io/knowledge-base/private-keys-passwords/difference-beween-private-key-and-keystore-file.html" target="_blank" rel="noopener noreferrer">
+        <img src="mew_files/icon-help-3.svg" style="margin: 0 5px 5px" width="16px" height="16px">
+      </a>
+    </label>
+
+    <!-- Mnemonic Phrase -->
+    <label class="radio">
+      <input aria-flowto="aria4" aria-label="mnemonic phrase" ng-model="walletType" value="pastemnemonic" class="ng-pristine ng-untouched ng-valid ng-not-empty" name="197" type="radio">
+      <span translate="x_Mnemonic" class="ng-scope">Mnemonic Phrase</span>
+      <a href="https://myetherwallet.github.io/knowledge-base/private-keys-passwords/difference-beween-private-key-and-keystore-file.html" target="_blank" rel="noopener noreferrer">
+        <img src="mew_files/icon-help-3.svg" style="margin: 0 5px 5px" width="16px" height="16px">
+      </a>
+    </label>
+
+    <!-- Private -->
+    <label class="radio">
+      <input aria-flowto="aria5" aria-label="private key" ng-model="walletType" value="pasteprivkey" class="ng-valid ng-not-empty ng-dirty ng-valid-parse ng-touched" name="199" checked="checked" type="radio">
+      <span translate="x_PrivKey2" class="ng-scope">Private Key</span>
+      <a href="https://myetherwallet.github.io/knowledge-base/private-keys-passwords/difference-beween-private-key-and-keystore-file.html" target="_blank" rel="noopener noreferrer">
+        <img src="mew_files/icon-help-3.svg" style="margin: 0 5px 5px" width="16px" height="16px">
+      </a>
+    </label>
+
+    <!-- Parity -->
+    <label class="radio" style="display: none;" id="showMeTheMoney">
+      <input aria-flowto="aria8" aria-label="parity phrase" ng-model="walletType" value="parityBWallet" class="ng-pristine ng-untouched ng-valid ng-not-empty" name="201" type="radio">
+      <span translate="x_ParityPhrase" class="ng-scope">Parity Phrase</span>
+    </label>
+
+    <label aria-flowto="aria9" class="radio">
+      &nbsp;
+      <span translate="x_ParityPhrase" class="ng-scope">Parity Phrase</span>
+      <a href="https://myetherwallet.github.io/knowledge-base/private-keys-passwords/parity-phrases-are-no-longer-supported.html" target="_blank" rel="noopener noreferrer">
+           <img src="mew_files/icon-help-3.svg" style="margin: 0 5px 5px" width="16px" height="16px">
+      </a>
+    </label>
+
+    <label aria-flowto="aria7" class="radio ng-hide" ng-show="globalService.currentTab==globalService.tabs.sendTransaction.id || globalService.currentTab==globalService.tabs.viewWalletInfo.id">
+      <input aria-flowto="aria8" aria-label="address" ng-model="walletType" value="addressOnly" class="ng-pristine ng-untouched ng-valid ng-not-empty" name="204" type="radio">
+        View Balance Only (Must use one of above options to send)
+    </label>
+
+  </section>
+  <!-- Column 1 - Select Type of Key -->
+
+
+  <!-- Column 2 - Unlock That Key -->
+  <section class="col-md-4 col-sm-6">
+
+    <!-- if selected keystore -->
+    <!-- ngIf: walletType=='fileupload' -->
+    <!-- /if selected keystore -->
+
+
+    <!-- if selected type ledger-->
+    <!-- ngIf: walletType=='ledger' -->
+    <!-- /if selected type ledger-->
+
+
+    <!-- if selected type MetaMask-->
+    <br>
+
+    <!-- ngIf: walletType=='metamask' -->
+    <!-- /if selected type MetaMask-->
+
+
+    <!-- if selected type mnemonic-->
+    <!-- ngIf: walletType=='pastemnemonic' -->
+    <!-- /if selected type mnemonic-->
+
+
+    <!-- if selected type private key-->
+    <!-- ngIf: walletType=='pasteprivkey' --><div id="selectedTypeKey" ng-if="walletType=='pasteprivkey'" class="ng-scope">
+      <h4 translate="ADD_Radio_3" class="ng-scope">Paste/Type Your Private Key</h4>
+      <div class="form-group">
+        <textarea id="aria6" class="form-control ng-pristine ng-untouched ng-valid ng-empty is-invalid" ng-change="onPrivKeyChange()" ng-class="Validator.isValidPrivKey($parent.$parent.manualprivkey.length) ? 'is-valid' : 'is-invalid'" ng-keyup="$event.keyCode == 13 &amp;&amp; decryptWallet()" ng-model="$parent.$parent.manualprivkey" placeholder="Private Key 
+" rows="4"></textarea>
+      </div>
+
+      <!-- ngIf: requirePPass -->
+    </div><!-- end ngIf: walletType=='pasteprivkey' -->
+    <!-- /if selected type private key-->
+
+    <br>
+
+    <!-- if selected type trezor-->
+    <!-- ngIf: walletType=='trezor' -->
+    <!-- /if selected type trezor-->
+
+
+
+    <!-- if selected type digitalBitbox-->
+    <!-- ngIf: walletType=='digitalBitbox' -->
+    <!-- /if selected type digitalbitbox-->
+
+
+    <!-- if selected addressOnly-->
+    <!-- ngIf: walletType=='addressOnly' -->
+    <!-- /if selected addressOnly-->
+
+
+    <!-- if selected parity phrase-->
+    <!-- ngIf: walletType=='parityBWallet' -->
+    <!-- /if selected parity phrase-->
+
+  </section>
+  <!-- / Column 2 - Unlock That Key -->
+
+  <!-- Column 3 - The Unlock Button -->
+  <section class="col-md-4 col-sm-6 ng-hide" ng-show="showFDecrypt||showPDecrypt||showMDecrypt||walletType=='ledger'||walletType=='trezor'||walletType=='digitalBitbox'||showAOnly||showParityDecrypt">
+    <h4 id="uploadbtntxt-wallet" ng-show="showFDecrypt||showPDecrypt||showMDecrypt" translate="ADD_Label_6" class="ng-scope ng-hide">Unlock your Wallet</h4>
+
+    <div class="form-group">
+      <a tabindex="0" role="button" class="btn btn-primary btn-block ng-scope ng-hide" ng-show="showFDecrypt||showPDecrypt||showMDecrypt||showParityDecrypt" ng-click="decryptWallet()" translate="ADD_Label_6_short">Unlock</a>
+    </div>
+
+    <div class="form-group">
+      <a class="btn btn-primary btn-block ng-hide" ng-click="decryptAddressOnly()" ng-show="showAOnly" role="button" tabindex="0">                  VIEW BALANCE         </a>
+    </div>
+
+    <div class="form-group">
+      <a class="btn btn-primary btn-block ng-scope ng-hide" ng-click="scanLedger()" ng-show="walletType=='ledger'" role="button" tabindex="0" translate="ADD_Ledger_scan">Connect to Ledger Wallet</a>
+    </div>
+
+  </section>
+
+  <!-- / Column 3 -The Unlock Button -->
+
+
+
+  <!-- MODAL -->
+  <article class="modal fade" id="mnemonicModel" tabindex="-1" role="dialog" aria-labelledby="Mnemonic Phrase Modal">
+
+    <section class="modal-dialog">
+
+      <section class="modal-content">
+
+        <div class="modal-body" role="document">
+
+          <button aria-label="Close" type="button" class="close" data-dismiss="modal">×</button>
+
+          <!-- Select HD Path -->
+          <h4 id="modalTitle" class="modal-title ng-scope" translate="ADD_Radio_5_Path" style="margin-bottom: .25rem">Select HD derivation path</h4>
+
+          <p class="alert alert-danger ng-hide" ng-hide="ajaxReq.type=='ETH'||ajaxReq.type=='ETC'||ajaxReq.type=='ROPSTEN ETH'||ajaxReq.type=='RINKEBY ETH'||ajaxReq.type=='KOVAN ETH'||ajaxReq.type=='EXP'">
+                We do not know the correct path for this network.
+                <a href="https://github.com/kvhnuke/etherwallet/issues" target="_blank" rel="noopener noreferrer">
+                      Please open a github issue
+                </a>
+                so we can discuss / be enlightened.
+          </p>
+
+          <section class="row">
+
+            <div class="col-sm-4">
+              <label class="radio small">
+                <input aria-describedby="Path: Jaxx, Metamask, Exodus, imToken - m/44'/60'/0'/0" ng-change="onHDDPathChange()" ng-model="HDWallet.dPath" value="m/44'/60'/0'/0" class="ng-pristine ng-untouched ng-valid ng-not-empty" name="209" checked="checked" type="radio">
+                <span ng-bind="HDWallet.defaultDPath" class="ng-binding">m/44'/60'/0'/0</span>
+                <p class="small">
+                  Jaxx, Metamask, Exodus, imToken, TREZOR (ETH) &amp; Digital Bitbox
+                </p>
+              </label>
+            </div>
+
+            <div class="col-sm-4">
+              <label class="radio small">
+                <input aria-describedby="Path: Ledger (ETH) m/44'/60'/0'" ng-change="onHDDPathChange()" ng-model="HDWallet.dPath" value="m/44'/60'/0'" class="ng-pristine ng-untouched ng-valid ng-not-empty" name="210" type="radio">
+                <span ng-bind="HDWallet.ledgerPath" class="ng-binding">m/44'/60'/0'</span>
+                <p class="small">
+                  Ledger (ETH)
+                </p>
+              </label>
+
+              <label class="radio small">
+                <input aria-describedby="Path: Ledger (ETC) m/44'/60'/160720'/0'" ng-change="onHDDPathChange()" ng-model="HDWallet.dPath" value="m/44'/60'/160720'/0'" class="ng-pristine ng-untouched ng-valid ng-not-empty" name="211" type="radio">
+                <span ng-bind="HDWallet.ledgerClassicPath" class="ng-binding">m/44'/60'/160720'/0'</span>
+                <p class="small">
+                  Ledger (ETC)
+                </p>
+              </label>
+            </div>
+
+            <div class="col-sm-4">
+              <label class="radio small">
+                <input aria-describedby="Path: TREZOR (ETC) m/44'/61'/0'/0" ng-change="onHDDPathChange()" ng-model="HDWallet.dPath" value="m/44'/61'/0'/0" class="ng-pristine ng-untouched ng-valid ng-not-empty" name="212" type="radio">
+                <span ng-bind="HDWallet.trezorClassicPath" class="ng-binding">m/44'/61'/0'/0</span>
+                <p class="small">
+                  TREZOR (ETC)
+                </p>
+              </label>
+            </div>
+
+            <div class="col-sm-4">
+              <label class="radio small">
+                <input aria-describedby="Path: SingularDTV m/0'/0'/0'" ng-change="onHDDPathChange()" ng-model="HDWallet.dPath" value="m/0'/0'/0'" class="ng-pristine ng-untouched ng-valid ng-not-empty" name="213" type="radio">
+                <span ng-bind="HDWallet.singularDTVPath" class="ng-binding">m/0'/0'/0'</span>
+                <p class="small">
+                  SingularDTV
+                </p>
+              </label>
+            </div>
+
+          </section>
+
+          <section class="row">
+
+            <div class="col-sm-4">
+              <label class="radio small">
+                <p class="small"><strong>
+                  Your Custom Path
+                </strong></p>
+                <input aria-describedby="Path: Enter your own - m/44'/60'/1'/0" ng-change="onHDDPathChange()" ng-model="HDWallet.dPath" value="m/44'/60'/1'/0" class="ng-pristine ng-untouched ng-valid ng-not-empty" name="214" type="radio">
+                <input aria-describedby="Path: Enter your own - m/44'/60'/1'/0" class="form-control input-sm ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="HDWallet.customDPath" ng-change="onCustomHDDPathChange()" style="float: right;margin: 0 0 .5rem;" value="m/44'/60'/1'/0" type="text">
+              </label>
+            </div>
+
+            <div class="col-sm-4">
+              <label class="radio small">
+                <input aria-describedby="Path: TREZOR - TESTNET - m/44'/1'/0'/0" ng-change="onHDDPathChange()" ng-model="HDWallet.dPath" value="m/44'/1'/0'/0" class="ng-pristine ng-untouched ng-valid ng-not-empty" name="215" type="radio">
+                <span ng-bind="HDWallet.trezorTestnetPath" class="ng-binding">m/44'/1'/0'/0</span>
+                <p class="small">
+                  Network: Testnets
+                </p>
+              </label>
+            </div>
+
+            <div class="col-sm-4">
+              <label class="radio small">
+                <input aria-describedby="Path: TREZOR (ETC) m/44'/40'/0'/0" ng-change="onHDDPathChange()" ng-model="HDWallet.dPath" value="m/44'/40'/0'/0" class="ng-pristine ng-untouched ng-valid ng-not-empty" name="216" type="radio">
+                <span ng-bind="HDWallet.hwExpansePath" class="ng-binding">m/44'/40'/0'/0</span>
+                <p class="small">
+                  Network: Expanse
+                </p>
+              </label>
+            </div>
+
+          </section>
+
+
+          <h4 id="modalTitle2" class="modal-title ng-scope" translate="MNEM_1" style="margin: .5rem 0">Please select the address you would like to interact with.</h4>
+
+          <table class="small table table-striped table-mnemonic">
+            <tbody><tr>
+              <th translate="x_Address" class="ng-scope">Your Address</th>
+              <th translate="MYWAL_Bal" class="ng-scope">Balance</th>
+              <th translate="sidebar_TokenBal" class="text-center ng-scope">Token Balances</th>
+            </tr>
+            <!-- ngRepeat: wallet in HDWallet.wallets track by $index -->
+
+            <tr class="m-addresses">
+
+              <td>
+                <a ng-click="AddRemoveHDAddresses(false)" ng-show="HDWallet.numWallets &gt; 5" role="link" tabindex="0" translate="MNEM_prev" class="ng-scope ng-hide">Previous Addresses</a>
+              </td>
+
+              <td></td>
+
+              <td>
+                <a ng-click="AddRemoveHDAddresses(true)" role="link" tabindex="0" translate="MNEM_more" class="ng-scope">More Addresses</a>
+              </td>
+
+            </tr>
+          </tbody></table>
+
+          <div class="clearfix button-group">
+            <button aria-label="Unlock this Wallet" class="btn btn-primary pull-right ng-scope" style="margin: 0 .1rem" ng-click="setHDWallet()" role="button" tabindex="0" translate="ADD_Label_6">Unlock your Wallet</button>
+
+            <button aria-label="Cancel - Will close dialog" class="btn btn-default pull-right ng-scope" style="margin: 0 .1rem" data-dismiss="modal" role="button" tabindex="0" translate="x_Cancel">Cancel</button>
+          </div>
+
+        </div>
+
+      </section>
+
+    </section>
+
+  </article>
+
+</article>
+</wallet-decrypt-drtv>
+</article>
+
+
+<!-- Button -->
+<article class="row block ng-hide" ng-show="wallet!=null">
+  <section class="col-xs-12 clearfix">
+    <a class="btn btn-info ng-scope" ng-click="generateTx()" translate="SEND_generate">Generate Transaction</a>
+  </section>
+  <section class="col-sm-6 clearfix">
+    <label translate="SEND_raw" class="ng-scope">Raw Transaction</label>
+    <textarea class="form-control ng-pristine ng-untouched ng-valid ng-empty" placeholder="" readonly="readonly" rows="5" ng-model="rawTx"></textarea>
+  </section>
+  <section class="col-sm-6 clearfix">
+    <label translate="SEND_signed" class="ng-scope">Signed Transaction</label>
+    <textarea class="form-control ng-pristine ng-untouched ng-valid ng-empty" placeholder="" readonly="readonly" rows="5" ng-model="signedTx"></textarea>
+  </section>
+</article>
+ 
+  
+
+   <article class="row block">
+
+  <div class="col-xs-12">
+    <h2 translate="OFFLINE_Step3_Title" class="ng-scope">Step 3: Send / Publish Transaction (Online Computer)</h2>
+  </div>
+
+  <div class="col-sm-6 col-xs-12">
+    <p translate="OFFLINE_Step3_Label_1" class="ng-scope">Paste the signed transaction from Step 2 here and press the "SEND TRANSACTION" button.</p>
+    <label translate="SEND_signed" class="ng-scope">Signed Transaction</label>
+    <textarea class="form-control ng-pristine ng-untouched ng-valid ng-empty" rows="7" ng-model="signedTx"></textarea>
+    <a class="btn btn-primary ng-scope" ng-click="confirmSendTx()" translate="SEND_trans">Send Transaction</a>
+  </div>
+
+  <div class="col-sm-6 col-xs-12">
+    <div class="qr-code" qr-code="" watch-var="signedTx" width="100%" style="  max-width: 20rem; margin: 1rem auto;"><canvas width="320" height="320"></canvas><img style="display: none;"></div>
+  </div>
+
+</article>
+ 
+  
+
+   <article class="modal fade" id="sendTransactionOffline" tabindex="-1">
+  <section class="modal-dialog">
+    <section class="modal-content">
+
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+
+        <h2 class="modal-title text-danger ng-scope" translate="SENDModal_Title">Warning!</h2>
+
+        <table class="table text-center"><tbody><tr>
+
+          <td ng-show="tx.sendMode=='ether'" class="ng-hide">
+            <div class="addressIdenticon med" title="Address Indenticon" blockie-address="0xb794f5ea0ba39494ce839613fffba74279579268" watch-var="tx.from" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAABzklEQVR4nO3asVEEQQwAwQvkoyE26pPAIwASwScdPgGwVJR+mTZka1bV59318vn+vTmvb7fR6J/NtR1w+gFP7wcg3g9AvB+AeD8A8X4A4v0AxPsBiPcDEO8HIN4PQLwfgHg/APF+AOL9AMT7AYj3AxDvByDeD0C8H4B4PwDxfgDi/QDE+wGI9wMQ7wcg3g9AvB+AeD8A8X4A4v0AxPuv7Qd8fdxHM+2fzrR/GyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPOMBTp/tDwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID/CWD7AdP90wNM5/T7AQDA2Q8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/grA9IDTA2wD2O4HAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgJ8AbAds7z+9f7ofgMP7AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB+AbB9wOkPFfpnA0C8H4B4PwDxfgDi/QDE+wGI9wMQ7wcg3g9AvB+AeD8A8X4A4v0AxPsBiPcDEO9/AHR7B7uoP+9cAAAAAElFTkSuQmCC&quot;);"></div>
+          </td>
+          <td ng-show="tx.sendMode!=='ether'" class="">
+            <div class="addressIdenticon med" title="Address Indenticon" blockie-address="" watch-var="tokenTx.from" style="background-image: url(&quot;&quot;);"></div>
+          </td>
+
+          <td ng-show="tx.sendMode=='ether'" class="mono ng-binding ng-hide">-&gt;<br> ETH</td>
+          <td ng-show="tx.sendMode!=='ether'" class="mono ng-binding">-&gt;<br>0 ETH</td>
+
+          <td ng-show="tx.sendMode=='ether'" class="ng-hide">
+            <div class="addressIdenticon med" title="Address Indenticon" blockie-address="" watch-var="tx.to" style="background-image: url(&quot;&quot;);"></div>
+          </td>
+          <td ng-show="tx.sendMode!=='ether'" class="">
+            <div class="addressIdenticon med" title="Address Indenticon" blockie-address="" watch-var="tokenTx.to" style="background-image: url(&quot;&quot;);"></div>
+          </td>
+
+        </tr></tbody></table>
+
+        <br>
+
+        <p>
+          <span translate="SENDModal_Content_1" class="ng-scope">You are about to send</span>
+          <strong ng-show="tx.sendMode=='ether'" class="mono ng-binding ng-hide"> ETH</strong>
+          <strong ng-show="tx.sendMode!=='ether'" class="mono ng-binding">0 ETH</strong>
+          <br>
+          <span translate="SENDModal_Content_2" class="ng-scope">to address</span>
+          <strong ng-show="tx.sendMode=='ether'" class="mono ng-binding ng-hide"> . </strong>
+          <strong ng-show="tx.sendMode!=='ether'" class="mono ng-binding">  </strong>
+        </p>
+
+        <p> The <strong class="ng-binding">ETH</strong> node you are sending through is provided by <strong class="ng-binding">MyEtherWallet</strong>.</p>
+
+        <h4 translate="SENDModal_Content_3" class="ng-scope">Are you sure you want to do this?</h4>
+
+      </div>
+
+
+      <div class="modal-footer">
+        <button class="btn btn-default ng-scope" data-dismiss="modal" translate="SENDModal_No">No, get me out of here!</button>
+        <button class="btn btn-primary ng-scope" ng-click="sendTx()" translate="SENDModal_Yes">Yes, I am sure! Make transaction.</button>
+      </div>
+
+    </section>
+  </section>
+</article>
+ 
+  
+
+</main><!-- end ngIf: globalService.currentTab==globalService.tabs.offlineTransaction.id -->
+
+
+    <!-- ngIf: globalService.currentTab==globalService.tabs.contracts.id -->
+
+
+    <!-- ngIf: globalService.currentTab==globalService.tabs.ens.id -->
+
+
+    <!-- ngIf: globalService.currentTab==globalService.tabs.domainsale.id -->
+
+
+    <!-- ngIf: globalService.currentTab==globalService.tabs.viewWalletInfo.id -->
+
+
+    <!-- ngIf: globalService.currentTab==globalService.tabs.txStatus.id --></div>
+
+
+  <!-- ngRepeat: alert in notifier.alerts -->
+
+
+
+  <!--
+  <section class="loading-wrap" ng-hide="1==1">
+    <div class="loading">
+      <img src="images/loading.gif" />
+      <h1> Loading... </h1>
+  </section>
+  -->
+
+</section>
+
+<section class="pre-footer">
+  <div class="container">
+    <p>MyEtherWallet.com does not hold your keys for you. We cannot 
+access accounts, recover keys, reset passwords, nor reverse 
+transactions. Protect your keys &amp; always check that you are on 
+correct URL. <a role="link" tabindex="0" data-toggle="modal" data-target="#disclaimerModal"> You are responsible for your security.</a>
+    </p>
+  </div>
+</section>
+
+<footer class="footer ng-scope" role="content" aria-label="footer" ng-controller="footerCtrl">
+
+  <article class="block__wrap" style="max-width: 1780px; margin: auto;">
+
+    <section class="footer--left">
+
+      <a href="https://www.myetherwallet.com/"><img src="mew_files/logo-myetherwallet.svg" alt="Ether Wallet" class="footer--logo" width="auto" height="45px"></a>
+
+      <p><span translate="FOOTER_1" class="ng-scope">Free, open-source, 
+client-side interface for generating Ethereum wallets &amp; more. 
+Interact with the Ethereum blockchain easily &amp; securely. 
+Double-check the URL ( .com ) before unlocking your wallet.</span></p>
+
+      <p><a aria-label="knowledge base" href="https://myetherwallet.github.io/knowledge-base/" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+        Knowledge Base
+      </a></p>
+
+      <p><a data-target="#disclaimerModal" data-toggle="modal" target="_blank" rel="noopener noreferrer" role="link" tabindex="0" translate="FOOTER_4" class="ng-scope">Disclaimer</a></p>
+
+      <p ng-show="showBlocks" class="ng-binding">Latest Block#: 4502766 </p>
+
+      <p> © 2017 MyEtherWallet, LLC </p>
+
+    </section>
+
+    <section class="footer--cent">
+        <h5> <i aria-hidden="true">👫</i> You can support us by supporting our blockchain-family.</h5>
+        <p>Consider using our affiliate links to...</p>
+        <div class="footer__pill-wrap">
+          <a class="footer__pill" aria-label="Swap Ether or Bitcoin via Bity.com" href="https://bity.com/af/jshkb37v" target="_blank" rel="noopener noreferrer">Swap ETH/BTC/EUR/CHF via Bity.com</a>
+        </div>
+        <p> Buy a... </p>
+        <div class="footer__pill-wrap">
+          <a class="footer__pill" href="https://www.ledgerwallet.com/r/fa4b?path=/products/" target="_blank" rel="noopener noreferrer">Ledger Wallet</a>
+          <a class="footer__pill" href="https://trezor.io/?a=myetherwallet.com" target="_blank" rel="noopener noreferrer">TREZOR</a>
+          <a class="footer__pill" href="https://digitalbitbox.com/?ref=mew" target="_blank" rel="noopener noreferrer">Digital Bitbox</a>
+          <a class="footer__pill" href="https://ether.cards/?utm_source=mew&amp;utm_medium=cpm&amp;utm_campaign=site" target="_blank" rel="noopener noreferrer">ether.card</a>
+        </div>
+
+        <h5><i aria-hidden="true">💝</i> Donations are always appreciated!</h5>
+        <p>ETH: <span class="mono wrap">mewtopia.eth <a title="See this address on the blockchain explorer" href="https://etherscan.io/address/0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8" class="ext-etheraddresslookup-link" target="_blank">0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8</a></span></p>
+        <p>BTC: <span class="mono wrap">1MEWT2SGbqtz6mPCgFcnea8XmWV5Z4Wc6</span></p>
+        <!--
+        <p>MYD: <span class="mono wrap">mewsupport.eth <small>0xf7e983781609012307f2514f63D526D83D24F466</small></span></p>
+        -->
+        <h5 ng-hide="curLang=='en'" class="ng-hide"> <i>🏅</i> <span translate="Translator_Desc" class="ng-scope"></span></h5>
+        <p ng-hide="curLang=='en'" class="ng-hide">
+          <span translate="TranslatorName_1" class="ng-scope"></span>
+          <span translate="TranslatorName_2" class="ng-scope"></span>
+          <span translate="TranslatorName_3" class="ng-scope"></span>
+          <span translate="TranslatorName_4" class="ng-scope"></span>
+          <span translate="TranslatorName_5" class="ng-scope"></span>
+        </p>
+
+    </section>
+
+    <section class="footer--righ">
+
+      <p><a aria-label="website via my ether wallet dot com" href="https://www.myetherwallet.com/" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+        MyEtherWallet.com
+      </a></p>
+
+      <p><a href="https://www.myetherwallet.com/helpers.html" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+        Unit Converters &amp; ENS Debugging
+      </a></p>
+
+      <p><a href="https://www.myetherwallet.com/signmsg.html" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+        Sign Message
+      </a></p>
+
+      <p><a aria-label="website via github URL" href="https://kvhnuke.github.io/etherwallet/" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+        kvhnuke.github.io/etherwallet
+      </a></p>
+
+      <p><a aria-label="my ether wallet github" href="https://github.com/kvhnuke/etherwallet" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+        Github: Current Site &amp; CX
+      </a></p>
+
+      <p><a aria-label="download &amp; run locally" href="https://github.com/kvhnuke/etherwallet/releases/latest" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+        Github: Latest Release
+      </a></p>
+
+      <p><a aria-label="my ether wallet chrome extension" href="https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm?hl=en" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+        MyEtherWallet Chrome Extension
+      </a></p>
+
+      <p><a aria-label="Anti-Phishing chrome extension" href="https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+        EAL "Don't Get Phish'd" Chrome Extension
+      </a></p>
+
+      <p>
+        <a aria-label="join our slack" title="slack" href="https://myetherwallet.herokuapp.com/" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+          <svg width="24" height="24" class="footer__icon" aria-labelledby="slack icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M9.879 10.995l1.035 3.085 3.205-1.074-1.035-3.074-3.205 1.08v-.017z"></path><path d="M18.824 14.055l-1.555.521.54 1.61c.218.65-.135 1.355-.786 1.574-.15.045-.285.067-.435.063-.511-.015-.976-.338-1.155-.849l-.54-1.607-3.21 1.073.539 1.608c.211.652-.135 1.358-.794 1.575-.15.048-.285.067-.435.064-.51-.015-.976-.34-1.156-.85l-.539-1.619-1.561.524c-.15.045-.285.061-.435.061-.511-.016-.976-.345-1.155-.855-.225-.66.135-1.364.78-1.575l1.56-.525L7.5 11.76l-1.551.525c-.141.048-.285.066-.428.064-.495-.016-.975-.338-1.141-.848-.209-.65.135-1.354.796-1.574l1.56-.52-.54-1.605c-.21-.654.136-1.359.796-1.575.659-.22 1.363.136 1.574.783l.539 1.608L12.3 7.544l-.54-1.605c-.209-.645.135-1.35.789-1.574.652-.211 1.359.135 1.575.791l.54 1.621 1.555-.51c.651-.219 1.356.135 1.575.779.218.654-.135 1.359-.784 1.575l-1.557.524 1.035 3.086 1.551-.516c.652-.211 1.358.135 1.575.795.22.66-.135 1.365-.779 1.574l-.011-.029zm4.171-5.356C20.52.456 16.946-1.471 8.699 1.005.456 3.479-1.471 7.051 1.005 15.301c2.475 8.245 6.046 10.17 14.296 7.694 8.245-2.475 10.17-6.046 7.694-14.296z" fill="#ffffff"></path></svg>
+        </a>
+        <a aria-label="reddit" href="https://www.reddit.com/r/MyEtherWallet/" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+          <svg width="24" height="24" class="footer__icon" aria-labelledby="reddit icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2.204 14.049c-.06.276-.091.56-.091.847 0 3.443 4.402 6.249 9.814 6.249 5.41 0 9.812-2.804 9.812-6.249 0-.274-.029-.546-.082-.809l-.015-.032c-.021-.055-.029-.11-.029-.165-.302-1.175-1.117-2.241-2.296-3.103-.045-.016-.088-.039-.126-.07-.026-.02-.045-.042-.067-.064-1.792-1.234-4.356-2.008-7.196-2.008-2.815 0-5.354.759-7.146 1.971-.014.018-.029.033-.049.049-.039.033-.084.06-.13.075-1.206.862-2.042 1.937-2.354 3.123 0 .058-.014.114-.037.171l-.008.015zm9.773 5.441c-1.794 0-3.057-.389-3.863-1.197-.173-.174-.173-.457 0-.632.176-.165.46-.165.635 0 .63.629 1.685.943 3.228.943 1.542 0 2.591-.3 3.219-.929.165-.164.45-.164.629 0 .165.18.165.465 0 .645-.809.808-2.065 1.198-3.862 1.198l.014-.028zm-3.606-7.573c-.914 0-1.677.765-1.677 1.677 0 .91.763 1.65 1.677 1.65s1.651-.74 1.651-1.65c0-.912-.739-1.677-1.651-1.677zm7.233 0c-.914 0-1.678.765-1.678 1.677 0 .91.764 1.65 1.678 1.65s1.651-.74 1.651-1.65c0-.912-.739-1.677-1.651-1.677zm4.548-1.595c1.037.833 1.8 1.821 2.189 2.904.45-.336.719-.864.719-1.449 0-1.002-.815-1.816-1.818-1.816-.399 0-.778.129-1.09.363v-.002zM2.711 9.963c-1.003 0-1.817.816-1.817 1.818 0 .543.239 1.048.644 1.389.401-1.079 1.172-2.053 2.213-2.876-.302-.21-.663-.329-1.039-.329v-.002zm9.217 12.079c-5.906 0-10.709-3.205-10.709-7.142 0-.275.023-.544.068-.809C.494 13.598 0 12.729 0 11.777c0-1.496 1.227-2.713 2.725-2.713.674 0 1.303.246 1.797.682 1.856-1.191 4.357-1.941 7.112-1.992l1.812-5.524.404.095s.016 0 .016.002l4.223.993c.344-.798 1.138-1.36 2.065-1.36 1.229 0 2.231 1.004 2.231 2.234 0 1.232-1.003 2.234-2.231 2.234s-2.23-1.004-2.23-2.23l-3.851-.912-1.467 4.477c2.65.105 5.047.854 6.844 2.021.494-.464 1.144-.719 1.833-.719 1.498 0 2.718 1.213 2.718 2.711 0 .987-.54 1.886-1.378 2.365.029.255.059.494.059.749-.015 3.938-4.806 7.143-10.72 7.143l-.034.009zm8.179-19.187c-.74 0-1.34.599-1.34 1.338 0 .738.6 1.34 1.34 1.34.732 0 1.33-.6 1.33-1.334 0-.733-.598-1.332-1.347-1.332l.017-.012z" fill="#ffffff"></path></svg>
+        </a>
+        <a aria-label="twitter" title="twitter" href="https://twitter.com/myetherwallet" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+          <svg width="24" height="24" class="footer__icon" aria-labelledby="twitter icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" fill="#ffffff"></path></svg>
+        </a>
+        <a aria-label="facebook" title="facebook" href="https://www.facebook.com/MyEtherWallet/" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+          <svg width="24" height="24" class="footer__icon" aria-labelledby="facebook icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0" fill="#ffffff"></path></svg>
+        </a>
+        <a aria-label="medium" title="medium" href="https://medium.com/@myetherwallet" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+          <svg width="24" height="24" class="footer__icon" aria-labelledby="medium icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.45 2.67l5.38 11.74H13c.86-1.93 1.6-3.91 2.4-5.87s1.6-3.9 2.35-5.86h5.66a3.67 3.67 0 0 1-.24.35c-.42.47-.83 1-1.28 1.41a1.61 1.61 0 0 0-.48 1.23v13a1.08 1.08 0 0 0 .38.86c.44.39.86.8 1.28 1.21l.41.42h-8.77a2.81 2.81 0 0 1 .26-.33c.41-.39.82-.79 1.25-1.16a1.22 1.22 0 0 0 .44-1V9.33c0-.44 0-.88.07-1.31V7.3h-.13c-.08.16-.18.31-.24.48l-5.3 13c-.07.18-.16.35-.25.52h-.12L4.23 7.16h-.14V16.42a1.93 1.93 0 0 0 .43 1.26c.77 1 1.52 2 2.28 3 .1.13.18.27.32.46H.5c.1-.17.17-.29.25-.39.79-1.05 1.59-2.11 2.39-3.15a1.81 1.81 0 0 0 .4-1.17v-10a1.51 1.51 0 0 0-.33-1C2.57 4.67 2 3.85 1.34 3c-.07-.1-.13-.21-.23-.36z" fill="#ffffff"></path></svg>
+        </a>
+        <a aria-label="linkedin" title="linkedin" href="https://www.linkedin.com/company/myetherwallet" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+          <svg width="24" height="24" class="footer__icon" aria-labelledby="linkedin icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" fill="#ffffff"></path></svg>
+        </a>
+        <a aria-label="github" title="github" href="https://github.com/MyEtherWallet" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+          <svg width="24" height="24" class="footer__icon" aria-labelledby="github icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" fill="#ffffff"></path></svg>
+        </a>
+      </p>
+
+    </section>
+
+  </article>
+
+
+
+
+</footer>
+
+ <article class="modal fade" id="disclaimerModal" tabindex="-1">
+  <section class="modal-dialog">
+    <section class="modal-content">
+
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+
+        <h2 class="modal-title text-info ng-scope" translate="FOOTER_4">Disclaimer</h2>
+
+        <p class="small"><strong>Be safe &amp; secure:</strong> <a href="https://myetherwallet.github.io/knowledge-base/security/securing-your-ethereum.html" target="_blank" rel="noopener noreferrer">
+ We highly recommend that you read our guide on How to Prevent Loss 
+&amp; Theft for some recommendations on how to be proactive about your 
+security.</a></p>
+
+        <p class="small"><strong>Always backup your keys: </strong> 
+MyEtherWallet.com &amp; MyEtherWallet CX are not "web wallets". You do 
+not create an account or give us your funds to hold onto. No data leaves
+ your computer / your browser. We make it easy for you to create, save, 
+and access your information and interact with the blockchain.</p>
+
+        <p class="small"><strong>We are not responsible for any loss: </strong>
+ Ethereum, MyEtherWallet.com &amp; MyEtherWallet CX, and some of the 
+underlying Javascript libraries we use are under active development. 
+While we have thoroughly tested &amp; tens of thousands of wallets have 
+been successfully created by people all over the globe, there is always 
+the possibility something unexpected happens that causes your funds to 
+be lost. Please do not invest more than you are willing to lose, and 
+please be careful.</p>
+
+        <p class="small"><strong> Translations of MyEtherWallet: </strong>
+ The community has done an amazing job translating MyEtherWallet into a 
+variety of languages. However, MyEtherWallet can only verify the 
+validity and accuracy of the information provided in English and, 
+because of this, the English version of our website is the official 
+text. </p>
+
+        <p class="small"><strong>MIT License</strong> Copyright © 2015-2017 MyEtherWallet LLC</p>
+
+        <p class="small">Permission is hereby granted, free of charge, 
+to any person obtaining a copy of this software and associated 
+documentation files (the "Software"), to deal in the Software without 
+restriction, including without limitation the rights to use, copy, 
+modify, merge, publish, distribute, sublicense, and/or sell copies of 
+the Software, and to permit persons to whom the Software is furnished to
+ do so, subject to the following conditions:</p>
+
+        <p class="small">The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+        <p class="small"><strong>THE SOFTWARE IS PROVIDED "AS IS", 
+WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT 
+LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
+PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN 
+AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
+SOFTWARE.</strong></p>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-default" data-dismiss="modal">Okay</button>
+      </div>
+
+    </section>
+  </section>
+</article>
+ 
+
+
+
+
+
+
+</body></html>

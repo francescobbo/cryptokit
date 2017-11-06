@@ -1,0 +1,13 @@
+You have BTC and ETH.
+
+The algorithm to generate the addresses and private keys is BIP39 with BIP44 derivation path.
+
+The account field is used to distinguish different "bank accounts", like one for savings, one to receive donations, another for daily use, etc. These are numbered from 0.
+
+Your used accounts:
+0 - Savings
+1 - ICO bridge (deposit funds to be used for ICOs)
+2 - ETH Tokens
+
+The Internal/External field (known as Change in BIP44) allows for easy selection of addresses to be used as change (pay 20$, use 25$, change 5$) targets, which as a best practice should not be the same original addresses.
+
